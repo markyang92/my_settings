@@ -12,7 +12,7 @@ sudo cp ./mkcscope.sh /usr/bin
 mkcscope.sh
 ```
 
-# Under the description is useful to copy & paste using Tmux on MacOS.
+## Under the description is useful to copy & paste using Tmux on MacOS.
 1. `brew install reattach-to-user-namespace`        <-- Enter it in your MacOS terminal
 2. Activate under command in ~/.tmux.conf
 ```bash
