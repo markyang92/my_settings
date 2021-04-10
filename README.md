@@ -11,16 +11,13 @@ sudo cp ./mkcscope.sh /usr/bin
 
 mkcscope.sh
 ```
-
-## Under the description is useful to copy & paste using Tmux on MacOS.
-1. `brew install reattach-to-user-namespace`        <-- Enter it in your MacOS terminal
-2. Activate under command in ~/.tmux.conf
+## font
+Install font file on Ubuntu
 ```bash
-set -g default-command "reattach-to-user-namespace -l $SHELL"
-```
-3. Insert under the command in settings.json on VSCode.
-```js
-"terminal.integrated.macOptionClickForcesSelection": true
+$ sudo cp fonts.ttf /usr/share /usr/share/fonts/
+$ sudo fc-cache -fv
 ```
 
-5. Copy the line you want to copy with the opt buttton pressed. and cmd+c (copy) / cmd+v (paste)
+In vscode, Set font `Menlo, Monaco, 'Courier New', monospace`
+
+
