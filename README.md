@@ -14,7 +14,7 @@ mkcscope.sh
 ## font
 Install font file on Ubuntu
 ```bash
-$ sudo cp fonts.ttf /usr/share /usr/share/fonts/
+$ sudo cp fonts.ttf /usr/share/fonts/
 $ sudo fc-cache -fv
 ```
 
