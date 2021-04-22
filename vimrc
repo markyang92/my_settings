@@ -9,6 +9,7 @@ set ts=4 "\t출력 스페이스 몇개"
 set sts=4 "tab 키 입력 스페이스 몇개"
 set shiftwidth=4 "자동 들여쓰기 시 스페이스 몇개"
 set laststatus=2 "마지막 창에 statusline을 보여주는 설정. 0: 출력 안함, 1: 창이 2개 이상일 때 출력, 2: 항상 출력"
+set statusline+=%F " F shows the Full path in statusbar, f show file name in statusbar
 set showmatch "괄호 매칭해서 하이라이트"
 set smartcase "No automatic ignore case switch"
 set smarttab "ts, sts, sw값을 참조하여, 탭과 백스페이스의 동작을 보조"

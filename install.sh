@@ -5,9 +5,14 @@ sudo apt upgrade -y
 sudo apt install git -y
 sudo apt install vim -y
 sudo apt install tmux -y
+sudo apt install terminator -y
 
 # setting for tmux
 cp ./tmux.conf ~/.tmux.conf
+
+# setting for terminator
+mkdir -p ~/.config/terminator
+cp config_for_terminator ~/.config/terminator/config
 
 # setting for vim
 sudo apt install curl

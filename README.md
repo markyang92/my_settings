@@ -2,7 +2,7 @@
 It is just my setting and tools
 
 ## install.sh
-Just run `./install.sh`
+Just run `./install.sh`, but Do not execute using 'sudo'
 
 ## cscope
 If you want to use cscope,
@@ -13,6 +13,7 @@ mkcscope.sh
 ```
 ## font
 Install font file on Ubuntu
+
 ```bash
 $ sudo cp fonts.ttf /usr/share/fonts/
 $ sudo fc-cache -fv
