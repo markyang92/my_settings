@@ -2,10 +2,11 @@
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install git -y
+sudo apt install git-gtk -y
 sudo apt install vim -y
 sudo apt install tmux -y
 sudo apt install terminator -y
+sudo apt install xclip -y
 
 # setting for tmux
 cp ./tmux.conf ~/.tmux.conf

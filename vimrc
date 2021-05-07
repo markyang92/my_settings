@@ -22,7 +22,7 @@ au BufReadPost *
 \ endif
 "마지막 수정 된 곳에 커서 위치"
 
-set clipboard=unnamed
+set clipboard=unnamedplus "use vim clipboard to system clipboard
 
 colorscheme jellybeans
 "mkdir -p ~/.vim/colors
