@@ -100,5 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias wk="cd /home/dhyang/workspace"
-export LANG='ko_KR.UTF-8'
-export LANGUAGE='ko:en'
+alias tc="tmux show-buffer | xclip -sel clipboard"
+alias co="xclip -sel clipboard -o"
