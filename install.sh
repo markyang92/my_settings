@@ -2,7 +2,7 @@
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install git-gtk -y
+sudo apt install git -y
 sudo apt install vim-gtk -y
 sudo apt install tmux -y
 sudo apt install terminator -y
