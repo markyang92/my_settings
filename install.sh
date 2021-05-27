@@ -2,7 +2,7 @@
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install git-gtk -y
+sudo apt install git -y
 sudo apt install vim-gtk -y
 sudo apt install tmux -y
 sudo apt install terminator -y
@@ -28,7 +28,8 @@ chsh -s `which zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # font
-sudo cp *.ttf /usr/share/fonts/
+sudo mkdir -p /usr/share/fonts/truetype/Menlo
+sudo cp *.ttf /usr/share/fonts/truetype/Menlo/
 sudo fc-cache -fv
 
 
