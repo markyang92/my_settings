@@ -1,0 +1,12 @@
+{
+  "chrome.storage.local": {
+    "last-update": 1622619728009,
+    "whitelist": [
+      "velog.io"
+    ],
+    "whitelist.session": []
+  },
+  "localStorage": {
+    "explore-count": "100"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "Gestures": [
+    {
+      "pattern": [
+        [
+          -220,
+          -6
+        ],
+        [
+          -7,
+          16
+        ],
+        [
+          4,
+          201
+        ]
+      ],
+      "command": {
+        "name": "CloseOtherTabs"
+      }
+    },
+    {
+      "pattern": [
+        [
+          4,
+          -306
+        ],
+        [
+          -11,
+          -6
+        ],
+        [
+          -202,
+          -5
+        ]
+      ],
+      "command": {
+        "name": "FocusLeftTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -1,
+          -288
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          72,
+          30
+        ],
+        [
+          186,
+          9
+        ],
+        [
+          10,
+          -2
+        ]
+      ],
+      "command": {
+        "name": "FocusRightTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          261,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          196
+        ]
+      ],
+      "command": {
+        "name": "ScrollBottom",
+        "settings": {
+          "duration": 100
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          233,
+          -22
+        ],
+        [
+          9,
+          -7
+        ],
+        [
+          9,
+          -33
+        ],
+        [
+          -13,
+          -162
+        ]
+      ],
+      "command": {
+        "name": "ScrollTop",
+        "settings": {
+          "duration": 100
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          1,
+          0
+        ]
+      ],
+      "command": {
+        "name": "PageForth"
+      }
+    },
+    {
+      "pattern": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "command": {
+        "name": "PageBack"
+      }
+    },
+    {
+      "pattern": [
+        [
+          13,
+          -267
+        ],
+        [
+          4,
+          222
+        ]
+      ],
+      "command": {
+        "name": "ReloadTab",
+        "settings": {
+          "cache": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -24,
+          269
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          167,
+          -10
+        ]
+      ],
+      "command": {
+        "name": "CloseTab",
+        "settings": {
+          "nextFocus": "default",
+          "closePinned": true
+        }
+      }
+    }
+  ]
+}
