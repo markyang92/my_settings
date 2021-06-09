@@ -184,5 +184,10 @@
         }
       }
     }
-  ]
+  ],
+  "Settings": {
+    "Gesture": {
+      "mouseButton": "4"
+    }
+  }
 }

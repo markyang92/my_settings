@@ -5,23 +5,31 @@
         "PIPI": "linux",
         "PIPI_in_compnay": "linux",
         "My_Ubuntu_Computer": "linux",
-        "devbox": "linux"
+        "devbox": "linux",
+        "local_computer": "linux",
+        "local_computer(Static)": "linux"
     },
     "C_Cpp.intelliSenseEngine": "Default",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "terminal.integrated.macOptionClickForcesSelection": true,
     "python.pythonPath": "/usr/bin/python3",
     "terminal.integrated.fontWeightBold": "bold",
-    "editor.fontWeight": "650",
+    "editor.fontWeight": "600",
     "editor.fontFamily": "Menlo,monospace",
     "terminal.integrated.fontFamily": "Menlo,monospace",
     "editor.mouseWheelZoom": true,
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.external.linuxExec": "/usr/bin/zsh"
+    "terminal.external.linuxExec": "/usr/bin/zsh",
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.tabSize": 4
 }
