@@ -30,6 +30,7 @@ colorscheme jellybeans
 "curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
 
 set list
+set expandtab
 set listchars=tab:>-
 "tab 입력시 >- 표시"
 
