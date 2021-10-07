@@ -27,6 +27,7 @@ sudo apt install zsh -y
 chsh -s `which zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+
 # font
 sudo mkdir -p /usr/share/fonts/truetype/Menlo
 sudo cp *.ttf /usr/share/fonts/truetype/Menlo/
