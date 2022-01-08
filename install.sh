@@ -30,7 +30,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # font
 sudo mkdir -p /usr/share/fonts/truetype/Menlo
-sudo cp *.ttf /usr/share/fonts/truetype/Menlo/
+sudo cp Menlo-Regular.ttf /usr/share/fonts/truetype/Menlo/
+
+sudo mkdir -p /usr/share/fonts/truetype/Monaco
+sudo cp Monaco.ttf /usr/share/fonts/truetype/Monaco/
 sudo fc-cache -fv
 
 
