@@ -2,12 +2,12 @@
   title_inactive_bg_color = "#f3f3f3"
   inactive_color_offset = 1.0
   title_use_system_font = False
-  title_font = Menlo Bold 9
+  title_font = Monego 10
 [keybindings]
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
-    font = Menlo Bold 10
+    font = Monego Bold 10
     foreground_color = "#ffffff"
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     use_system_font = False
