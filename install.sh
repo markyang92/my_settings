@@ -7,9 +7,16 @@ sudo apt install vim-gtk -y
 sudo apt install tmux -y
 sudo apt install terminator -y
 sudo apt install xclip -y
+sudo apt install tig -y
 
 # setting for tmux
 cp ./tmux.conf ~/.tmux.conf
+
+# setting for gitconfig
+cp ./gitconfig ~/.gitconfig
+
+# setting for tigrc
+cp ./tigrc ~/.tigrc
 
 # setting for terminator
 mkdir -p ~/.config/terminator

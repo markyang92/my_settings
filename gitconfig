@@ -1,0 +1,12 @@
+[include]
+#path = 
+
+[core]
+	editor = vim
+
+[pager]
+	branch = false
+
+[user]
+#name = mark.yang
+#email = mark.yang
