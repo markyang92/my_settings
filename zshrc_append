@@ -1,0 +1,9 @@
+# It is only for my option
+alias wk="cd ${HOME}/workspace"
+
+unsetopt sharehistory
+
+## If you installed pyenv and want to activate it
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init --path)"

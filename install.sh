@@ -49,3 +49,5 @@ mkdir -p https://github.com/markyang92/monego.git
 sudo cp -r monego/Monego-with-ligatures /usr/share/fonts/truetype/Monego-with-ligatures
 
 sudo fc-cache -fv
+
+cat zshrc_append >> ~/.zshrc
