@@ -1,0 +1,2 @@
+https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_96.0.1054.34-1_amd64.deb
+microsoft_pubkey="curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -"

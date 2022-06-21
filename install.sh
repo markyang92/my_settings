@@ -29,12 +29,6 @@ curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/
 mv jellybeans.vim ~/.vim/colors
 cp vimrc ~/.vimrc
 
-# install zsh + omz
-sudo apt install zsh -y
-chsh -s `which zsh`
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-
 # font
 sudo mkdir -p /usr/share/fonts/truetype/Menlo
 sudo cp Menlo-Regular.ttf /usr/share/fonts/truetype/Menlo/
@@ -50,4 +44,11 @@ sudo cp -r monego/Monego-with-ligatures /usr/share/fonts/truetype/Monego-with-li
 
 sudo fc-cache -fv
 
+# install zsh + omz
+sudo apt install zsh -y
+chsh -s `which zsh`
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cat zshrc_append >> ~/.zshrc
+
+# install pyenv
+curl https://pyenv.run | bash
