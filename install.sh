@@ -25,11 +25,10 @@ cp config_for_terminator ~/.config/terminator/config
 # setting for vim
 sudo apt install curl
 mkdir -p ~/.vim/colors
-curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
-mv jellybeans.vim ~/.vim/colors
+curl -sL https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim -o ~/.vim/colors/jellybeans.vim
 cp vimrc ~/.vimrc
 
-# font
+# ======== install fonts  ======== #
 sudo mkdir -p /usr/share/fonts/truetype/Menlo
 sudo cp Menlo-Regular.ttf /usr/share/fonts/truetype/Menlo/
 
@@ -41,13 +40,21 @@ sudo cp -r monego/Monego-Nerd-Font /usr/share/fonts/truetype/Monego-Nerd-Font
 mkdir -p https://github.com/markyang92/monego.git
 sudo cp -r monego/Monego-with-ligatures /usr/share/fonts/truetype/Monego-with-ligatures
 
-sudo fc-cache -fv
+sudo fc-cache -fv | bash
 
-# install zsh + omz
+# ======== install zsh + omz  ======== #
 sudo apt install zsh -y
 chsh -s `which zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cat zshrc_append >> ~/.zshrc
 
-# install pyenv
+# ======== install pyenv  ======== #
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git libssl-dev
 curl https://pyenv.run | bash
+
+# ======== install diskus  ======== #
+curl -sL https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus_0.7.0_amd64.deb -o ~/diskus_0.7.0_amd64.deb && cd ~ && sudo dpkg -i ./diskus_0.7.0_amd64.deb                                                          
+# ======== install GNU/parallel  ======== #
+curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/parallel.tar.bz2 && cd ~ && tar -jxvf ./parallel.tar.bz2 -C ./ && cd ./parallel-[0-9]* && ./configure && make && sudo make install && cd ~ && rm -rf ./parallel-[0-9]*
