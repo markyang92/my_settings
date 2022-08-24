@@ -16,7 +16,8 @@ cp ./tmux.conf ~/.tmux.conf
 cp ./gitconfig ~/.gitconfig
 
 # setting for tigrc
-cp ./tigrc ~/.tigrc
+git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc
+cp ./tigrc/.tigrc ~/
 
 # setting for terminator
 mkdir -p ~/.config/terminator
