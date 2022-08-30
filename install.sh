@@ -63,7 +63,7 @@ curl -sL https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus_0.7.0
 curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/parallel.tar.bz2 && cd ~ && tar -jxvf ./parallel.tar.bz2 -C ./ && cd ./parallel-[0-9]* && ./configure && make && sudo make install && cd ~ && rm -rf ./parallel-[0-9]*
 
 # ======== install tig  ======== #
-curl -sL https://github.com/jonas/tig/releases/download/tig-2.5.7/tig-2.5.7.tar.gz -o ~/tig.tar.gz && cd ~ && tar -zxvf ./tig.tar.gz -C ./ && cd ./tig && ./configure && make && sudo make install
+curl -sL https://github.com/jonas/tig/releases/download/tig-2.5.7/tig-2.5.7.tar.gz -o ~/tig.tar.gz && cd ~ && tar -zxvf ./tig.tar.gz -C ./ && cd ./tig-2.5.7 && ./configure && make && sudo make install
 
 # setting for tigrc
 git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc
