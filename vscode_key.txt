@@ -1,0 +1,1 @@
+editorTextFocus && vim.mode != 'Insert'
