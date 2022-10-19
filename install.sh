@@ -7,7 +7,6 @@ sudo apt install vim-gtk -y
 sudo apt install tmux -y
 sudo apt install terminator -y
 sudo apt install xclip -y
-sudo apt install tig -y
 
 # setting for tmux
 cp ./tmux.conf ~/.tmux.conf
