@@ -65,5 +65,4 @@ curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/paralle
 curl -sL https://github.com/jonas/tig/releases/download/tig-2.5.7/tig-2.5.7.tar.gz -o ~/tig.tar.gz && cd ~ && tar -zxvf ./tig.tar.gz -C ./ && cd ./tig-2.5.7 && ./configure && make && sudo make install
 
 # setting for tigrc
-git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc
-cp ./tigrc/.tigrc ~/
+cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc && cp ./tigrc/.tigrc ~/
