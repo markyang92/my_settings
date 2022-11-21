@@ -5,6 +5,7 @@ sudo apt upgrade -y
 sudo apt install git -y
 sudo apt install vim-gtk -y
 sudo apt install tmux -y
+sudo apt install tig -y
 sudo apt install terminator -y
 sudo apt install xclip -y
 
@@ -51,18 +52,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cat zshrc_append >> ~/.zshrc
 
 # ======== install pyenv  ======== #
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl git libssl-dev
+sudo apt install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libssl-dev
 curl https://pyenv.run | bash
 
 # ======== install diskus  ======== #
 curl -sL https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus_0.7.0_amd64.deb -o ~/diskus_0.7.0_amd64.deb && cd ~ && sudo dpkg -i ./diskus_0.7.0_amd64.deb                                                          
 # ======== install GNU/parallel  ======== #
 curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/parallel.tar.bz2 && cd ~ && tar -jxvf ./parallel.tar.bz2 -C ./ && cd ./parallel-[0-9]* && ./configure && make && sudo make install && cd ~ && rm -rf ./parallel-[0-9]*
-
-# ======== install tig  ======== #
-curl -sL https://github.com/jonas/tig/releases/download/tig-2.5.7/tig-2.5.7.tar.gz -o ~/tig.tar.gz && cd ~ && tar -zxvf ./tig.tar.gz -C ./ && cd ./tig-2.5.7 && ./configure && make && sudo make install
 
 # setting for tigrc
 cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc && cp ./tigrc/.tigrc ~/
