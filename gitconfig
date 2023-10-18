@@ -2,7 +2,8 @@
 #path = 
 
 [core]
-	editor = vim
+	#editor = vim
+	editor = code --wait
 
 [pager]
 	branch = false
