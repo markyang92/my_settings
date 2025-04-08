@@ -34,3 +34,5 @@ unsetopt sharehistory
 #~/.fzf/install​
 
 # apt install autojump
+
+#zle -A .self-insert self-insert
