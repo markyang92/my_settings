@@ -24,14 +24,16 @@ unsetopt sharehistory
 
 
 # zsh-syntax-highlighting
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # zsh-autosuggestions
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # fzf (Fuzzy Finder )
-#git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-#~/.fzf/install​
+#$ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#$ ~/.fzf/install​
+# append following line in ~/.zshrc
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # apt install autojump
 
