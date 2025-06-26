@@ -27,23 +27,23 @@ curl -sL https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors
 cp vimrc ~/.vimrc
 
 # ======== install fonts  ======== #
-sudo mkdir -p /usr/share/fonts/truetype/Menlo
-sudo cp Menlo-Regular.ttf /usr/share/fonts/truetype/Menlo/
+#sudo mkdir -p /usr/share/fonts/truetype/Menlo
+#sudo cp Menlo-Regular.ttf /usr/share/fonts/truetype/Menlo/
 
-git clone https://github.com/markyang92/monego.git
+#git clone https://github.com/markyang92/monego.git
 
-sudo mkdir -p /usr/share/fonts/truetype/Monego
-sudo cp -r ./monego/Monego /usr/share/fonts/truetype/Monego
+#sudo mkdir -p /usr/share/fonts/truetype/Monego
+#sudo cp -r ./monego/Monego /usr/share/fonts/truetype/Monego
 
-sudo mkdir -p /usr/share/fonts/truetype/Monego-Nerd-Font
-sudo cp -r monego/Monego-Nerd-Font /usr/share/fonts/truetype/Monego-Nerd-Font
+#sudo mkdir -p /usr/share/fonts/truetype/Monego-Nerd-Font
+#sudo cp -r monego/Monego-Nerd-Font /usr/share/fonts/truetype/Monego-Nerd-Font
 
-sudo mkdir -p /usr/share/fonts/truetype/Monego-with-ligatures
-sudo cp -r monego/Monego-with-ligatures /usr/share/fonts/truetype/Monego-with-ligatures
+#sudo mkdir -p /usr/share/fonts/truetype/Monego-with-ligatures
+#sudo cp -r monego/Monego-with-ligatures /usr/share/fonts/truetype/Monego-with-ligatures
 
 sleep 1
 
-sudo fc-cache -fv | bash
+#sudo fc-cache -fv | bash
 
 # ======== install zsh + omz  ======== #
 sudo apt install zsh -y
@@ -58,9 +58,9 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 curl https://pyenv.run | bash
 
 # ======== install diskus  ======== #
-curl -sL https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus_0.7.0_amd64.deb -o ~/diskus_0.7.0_amd64.deb && cd ~ && sudo dpkg -i ./diskus_0.7.0_amd64.deb                                                          
+curl -sL https://github.com/sharkdp/diskus/releases/download/v0.8.0/diskus_0.8.0_amd64.deb -o ~/diskus_0.8.0_amd64.deb && cd ~ && sudo dpkg -i ./diskus_0.8.0_amd64.deb
 # ======== install GNU/parallel  ======== #
-curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/parallel.tar.bz2 && cd ~ && tar -jxvf ./parallel.tar.bz2 -C ./ && cd ./parallel-[0-9]* && ./configure && make && sudo make install && cd ~ && rm -rf ./parallel-[0-9]*
+#curl -sL https://ftpmirror.gnu.org/parallel/parallel-latest.tar.bz2 -o ~/parallel.tar.bz2 && cd ~ && tar -jxvf ./parallel.tar.bz2 -C ./ && cd ./parallel-[0-9]* && ./configure && make && sudo make install && cd ~ && rm -rf ./parallel-[0-9]*
 
 # setting for tigrc
 cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc && cp ./tigrc/.tigrc ~/
