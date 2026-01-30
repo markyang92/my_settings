@@ -38,14 +38,12 @@
                 "whitelist": []
             },
             {
-                "action": "G_up",
                 "direct": "U",
-                "whitelist": []
+                "action": "G_top"
             },
             {
-                "action": "G_down",
                 "direct": "D",
-                "whitelist": []
+                "action": "G_bottom"
             },
             {
                 "action": "G_close",
@@ -69,19 +67,6 @@
                 "action": "G_righttab",
                 "direct": "UR",
                 "whitelist": []
-            },
-            {
-                "action": "G_closewindow",
-                "direct": "URD",
-                "whitelist": []
-            },
-            {
-                "direct": "RU",
-                "action": "G_top"
-            },
-            {
-                "direct": "RD",
-                "action": "G_bottom"
             },
             {
                 "direct": "LD",
@@ -115,7 +100,7 @@
         "draginput": false,
         "draglink": false,
         "dragtext": false,
-        "dragui": false,
+        "dragui": true,
         "dstroke": false,
         "dstrokecolor": "#4E1485",
         "dstrokeopa": 0.8,
@@ -124,81 +109,12 @@
         "dtooltipcolor": "#120310",
         "dtooltipopa": 0.9,
         "dtooltipwidth": 18,
-        "image": [
-            {
-                "action": "I_open",
-                "direct": "L",
-                "moreDes": "I_open newback",
-                "morePinned": "unpinned",
-                "morePosition": "left",
-                "moreTarget": "newback"
-            },
-            {
-                "action": "I_open",
-                "direct": "R",
-                "moreDes": "I_open newfront",
-                "morePinned": "unpinned",
-                "morePosition": "right",
-                "moreTarget": "newfront"
-            },
-            {
-                "action": "I_save",
-                "direct": "D"
-            }
-        ],
+        "image": [],
         "imgfirst": "none",
         "imgfirstcheck": false,
-        "link": [
-            {
-                "action": "L_open",
-                "direct": "L",
-                "moreDes": "L_open newback",
-                "morePinned": "unpinned",
-                "morePosition": "left",
-                "moreTarget": "newback"
-            },
-            {
-                "action": "L_open",
-                "direct": "R",
-                "moreDes": "L_open newfront",
-                "morePinned": "unpinned",
-                "morePosition": "right",
-                "moreTarget": "newfront"
-            },
-            {
-                "action": "L_copytext",
-                "direct": "D"
-            },
-            {
-                "action": "L_copyurl",
-                "direct": "U"
-            }
-        ],
+        "link": [],
         "setdragurl": false,
-        "text": [
-            {
-                "action": "T_search",
-                "direct": "L",
-                "moreDes": "New tab & Background",
-                "morePinned": "unpinned",
-                "morePosition": "left",
-                "moreTarget": "newback",
-                "moreTsearch": "sgoogle"
-            },
-            {
-                "action": "T_search",
-                "direct": "R",
-                "moreDes": "New tab & Front",
-                "morePinned": "unpinned",
-                "morePosition": "right",
-                "moreTarget": "newfront",
-                "moreTsearch": "sgoogle"
-            },
-            {
-                "action": "T_copytext",
-                "direct": "D"
-            }
-        ]
+        "text": []
     },
     "scroll": {
         "scrollaccele": 1,
