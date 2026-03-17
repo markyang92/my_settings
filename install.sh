@@ -64,3 +64,23 @@ curl -sL https://github.com/sharkdp/diskus/releases/download/v0.8.0/diskus_0.8.0
 
 # setting for tigrc
 cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc && cp ./tigrc/.tigrc ~/
+
+# git-delta
+# wget https://github.com/dandavison/delta/releases/latest/download/git-delta_0.18.2_amd64.deb\
+# sudo dpkg -i git-delta_0.18.2_amd64.deb
+# Add following lines to ~/.gitconfig:
+#  [core]
+#      pager = delta
+#
+#  [delta]
+#      side-by-side = true
+#      line-numbers = true
+#
+#  [interactive]
+#      diffFilter = delta --color-only# [core]
+#     pager = delta
+# [interactive]
+# Add following lines to ~/.tigrc
+#  bind diff D !sh -c "git show %(commit) | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
+#  bind main D !sh -c "git show %(commit) | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
+#  bind status D !sh -c "git diff --staged | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
