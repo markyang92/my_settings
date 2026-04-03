@@ -66,7 +66,7 @@ curl -sL https://github.com/sharkdp/diskus/releases/download/v0.8.0/diskus_0.8.0
 cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git tigrc && cp ./tigrc/.tigrc ~/
 
 # git-delta
-# wget https://github.com/dandavison/delta/releases/latest/download/git-delta_0.18.2_amd64.deb\
+# wget https://github.com/dandavison/delta/releases/latest/download/git-delta_0.18.2_amd64.deb
 # sudo dpkg -i git-delta_0.18.2_amd64.deb
 # Add following lines to ~/.gitconfig:
 #  [core]
@@ -75,12 +75,14 @@ cd ~ && git clone https://gist.github.com/f9f3ffb83221ed2dbeef67d11f9ff189.git t
 #  [delta]
 #      side-by-side = true
 #      line-numbers = true
+#      plus-style = syntax "#003800"
+#      plus-emph-style = syntax "#005500"
 #
 #  [interactive]
-#      diffFilter = delta --color-only# [core]
-#     pager = delta
+#      diffFilter = delta --color-only
 # [interactive]
 # Add following lines to ~/.tigrc
-#  bind diff D !sh -c "git show %(commit) | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
-#  bind main D !sh -c "git show %(commit) | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
-#  bind status D !sh -c "git diff --staged | delta --side-by-side --width=$(stty size < /dev/tty | cut -d' ' -f2)"
+#bind diff D !sh -c "git show %(commit) | delta --side-by-side --width=$(stty size < /dev/tty | cut -d ' ' -f2)"
+#bind main D !sh -c "w=$(stty size < /dev/tty | cut -d ' ' -f2); c=%(commit); if [ \"$c\" = \"0000000000000000000000000000000000000000\" ]; then git diff HEAD | delta --side-by-side --width=$w; else git show \"$c\" | delta --side-by-side --width=$w; fi"
+#bind status D !sh -c "git diff --staged | delta --side-by-side --width=$(stty size < /dev/tty | cut -d ' ' -f2)"
+#bind stage D !sh -c "git diff --staged | delta --side-by-side --width=$(stty size < /dev/tty | cut -d ' ' -f2)"
