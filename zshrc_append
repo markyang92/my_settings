@@ -38,3 +38,12 @@ unsetopt sharehistory
 # apt install autojump
 
 #zle -A .self-insert self-insert
+
+if ! command -v code >/dev/null 2>&1; then
+	for vscode_remote_cli_dir in "$HOME"/.vscode-server/cli/servers/*/server/bin/remote-cli; do
+		if [ -x "$vscode_remote_cli_dir/code" ]; then
+			export PATH="$vscode_remote_cli_dir:$PATH"
+			break
+		fi
+	done
+fi
