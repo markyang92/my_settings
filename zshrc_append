@@ -47,3 +47,9 @@ if ! command -v code >/dev/null 2>&1; then
 		fi
 	done
 fi
+
+if [[ -n $TMUX ]]; then
+	vscode_ipc_latest=$(ls -t /run/user/$UID/vscode-ipc-*.sock 2>/dev/null | head -1)
+	[[ -n $vscode_ipc_latest ]] && export VSCODE_IPC_HOOK_CLI=$vscode_ipc_latest
+	unset vscode_ipc_latest
+fi
